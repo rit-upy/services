@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- The code for the AppBar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FFFEFE"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/bottom_lotus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="11dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="66dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="49dp"
+                android:layout_marginLeft="49dp"
+
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="10dp"
+                android:lineHeight="21sp"
+                android:text="Services"
+                android:textColor="#403E42"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto_condensed_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_launcher_background" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="348dp"
+        android:layout_height="296dp"
+        android:layout_margin="6dp">
+
+        <ImageView
+            android:layout_width="348dp"
+            android:layout_height="296dp"
+
+            android:src="@drawable/images" />
+
+        <TextView
+            android:id="@+id/topic_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:alpha="0.41"
+            android:text="It's His Birthday"
+            android:textColor="#f93f3f"
+            android:textSize="21sp"
+            app:fontFamily="@font/roboto_condensed_bold" />
+
+        <!--This LinearLayout is used for drawing the text inside the rectangle -->
+        <LinearLayout
+            android:layout_width="242dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="198dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:lineHeight="16dp"
+
+                android:text="This is Sample Text"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+
+                app:fontFamily="@font/roboto_bold" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="37dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="142dp"
+            android:lineHeight="19dp"
+
+            android:text="Dates"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:fontFamily="@font/roboto_condensed_bold" />
+
+        <LinearLayout
+            android:layout_width="86dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="142dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="12 June 2019"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="13 June 2019"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reject_button"
+        android:layout_width="35dp"
+        android:layout_height="16dp"
+
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="REJECT"
+        android:textColor="#4B0082"
+        android:textStyle="bold"
+        tools:ignore="KeyboardInaccessibleWidget" />
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="103dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginLeft="248dp"
+        android:background="#4B0082"
+
+        android:text="ACCEPT"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
+
+    <!--
+
+     Code that was working before
+
+
+     <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFEFE"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bottom_lotus"
+                android:layout_alignParentLeft="true"
+
+                />
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="17dp"
+                android:src="@drawable/arrow"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="66dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="10dp"
+
+                android:lineHeight="21sp"
+                android:text="Services"
+                android:textColor="#403E42"
+                android:textSize="16dp"
+                app:fontFamily="@font/roboto_condensed_regular" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        />
+
+
+
+    </LinearLayout> -->
